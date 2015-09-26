@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: apsis_bot_production
+  database: apsis_bot
   username: apsis_bot
   password: <%= ENV['APSIS_BOT_DATABASE_PASSWORD'] %>
