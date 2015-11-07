@@ -2,10 +2,18 @@
 
 one:
   user_id: 1
-  access_token: MyString
-  access_token_secret: MyString
+  twitter_user_id: 11111
+  access_token: MyString1
+  access_token_secret: MyString1
 
 two:
   user_id: 1
-  access_token: MyString
-  access_token_secret: MyString
+  twitter_user_id: 22222
+  access_token: MyString2
+  access_token_secret: MyString2
+
+three:
+  user_id: 2
+  twitter_user_id: 33333
+  access_token: Mystring3
+  access_token_secret: Mystring3

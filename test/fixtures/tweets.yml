@@ -2,8 +2,12 @@
 
 one:
   twitter_account_id: 1
-  content: MyString
+  content: MyString1
 
 two:
   twitter_account_id: 1
-  content: MyString
+  content: MyString2
+
+three:
+  twitter_account_id: 2
+  content: MyString3

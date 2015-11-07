@@ -2,8 +2,12 @@
 
 one:
   tweet_id: 1
-  tweeted: 2015-11-02 02:07:15
+  tweeted_at: 2015-11-02 02:07:15
 
 two:
   tweet_id: 1
-  tweeted: 2015-11-02 02:07:15
+  tweeted_at: 2015-11-02 02:07:15
+
+three:
+  tweet_id: 2
+  tweeted_at: 2015-11-02 02:07:15
