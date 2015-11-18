@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151101170715) do
+ActiveRecord::Schema.define(version: 20151118144023) do
 
   create_table "tweet_logs", force: :cascade do |t|
     t.integer  "tweet_id",   limit: 4, null: false
@@ -49,6 +49,8 @@ ActiveRecord::Schema.define(version: 20151101170715) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
   add_foreign_key "tweet_logs", "tweets"
   add_foreign_key "tweets", "twitter_accounts"
