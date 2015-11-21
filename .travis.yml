@@ -2,6 +2,7 @@ language: ruby
 
 rvm:
   - 2.1.5
+  - 2.2.3
 
 env:
   - DB=mysql
@@ -9,6 +10,8 @@ env:
 before_script:
   - bundle exec rake db:create
   - bundle exec rake db:migrate
+
+cache: bundler
 
 script:
   - bundle exec rake test
