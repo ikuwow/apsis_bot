@@ -3,9 +3,9 @@
 one:
   name: username1
   email: username1@example.com
-  password: mypassword1
+  # password_digest: mypassword1
 
 two:
   name: username2
   email: username2@example.com
-  password: mypassword2
+  # password_digest: mypassword2
