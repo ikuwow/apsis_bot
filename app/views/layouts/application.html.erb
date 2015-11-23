@@ -15,9 +15,12 @@
 
   <body>
 
-    <div style="width: 980px; margin: 0 auto;">
-    <%= yield %>
-    </div>
+  <div style="width: 980px; margin: 0 auto;">
+  <%= yield %>
+
+  <%= debug(params) if Rails.env.development? %>
+  </div>
+
 
   </body>
 </html>
