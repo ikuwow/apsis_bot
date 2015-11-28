@@ -16,8 +16,17 @@
   <body>
 
   <div style="width: 980px; margin: 0 auto;">
-      <% flash.each do |k,v| %>
-          <%= content_tag(:div, v, class:"alert-box alert") %>
+      <%
+      flash.each do |k,v|
+        className = "alert-box"
+          case k
+          when "danger"
+              className += " alert"
+          when "success"
+              className += " success"
+          end
+      %>
+      <%= content_tag(:div, v, class: className) %>
       <% end %>
   <%= yield %>
 
